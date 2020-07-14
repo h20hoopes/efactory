@@ -1,5 +1,6 @@
 {
   "name": "efactory",
+  "homepage": "https://h20hoopes.github.io/efactory",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
