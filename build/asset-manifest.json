@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.js": "/efactory/static/js/main.7c67f414.chunk.js",
+    "main.js.map": "/efactory/static/js/main.7c67f414.chunk.js.map",
+    "runtime-main.js": "/efactory/static/js/runtime-main.c9e47b63.js",
+    "runtime-main.js.map": "/efactory/static/js/runtime-main.c9e47b63.js.map",
+    "static/css/2.829c9cb5.chunk.css": "/efactory/static/css/2.829c9cb5.chunk.css",
+    "static/js/2.b41a583f.chunk.js": "/efactory/static/js/2.b41a583f.chunk.js",
+    "static/js/2.b41a583f.chunk.js.map": "/efactory/static/js/2.b41a583f.chunk.js.map",
+    "index.html": "/efactory/index.html",
+    "precache-manifest.0e8ccf6133899cdeef19e541836a26c0.js": "/efactory/precache-manifest.0e8ccf6133899cdeef19e541836a26c0.js",
+    "service-worker.js": "/efactory/service-worker.js",
+    "static/css/2.829c9cb5.chunk.css.map": "/efactory/static/css/2.829c9cb5.chunk.css.map",
+    "static/js/2.b41a583f.chunk.js.LICENSE.txt": "/efactory/static/js/2.b41a583f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c9e47b63.js",
+    "static/css/2.829c9cb5.chunk.css",
+    "static/js/2.b41a583f.chunk.js",
+    "static/js/main.7c67f414.chunk.js"
+  ]
+}
