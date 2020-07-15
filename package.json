@@ -19,7 +19,11 @@
   },
   "scripts": {
     "predeploy": "npm run build",
+<<<<<<< HEAD
     "deploy": "gh-pages -b production -d build",
+=======
+    "deploy": "gh-pages -d build",
+>>>>>>> parent of 979234b... built
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
