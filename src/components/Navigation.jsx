@@ -5,49 +5,60 @@ import Nav from "react-bootstrap/Nav";
 import Form from "react-bootstrap/Form";
 import FormControl from "react-bootstrap/FormControl";
 import Button from "react-bootstrap/Button";
+import logo from "../content/images/logo.png";
 
 class Navigation extends Component {
   render() {
-    const navigationProps = this.props.settings.navigationItems;
-    const navigation = makeNavigation(navigationProps);
+    const navigationProps = this.props.settings.navigation.navigationItems;
+    const style = this.props.settings.navigation.style;
+    // const logo = this.props.settings.navigation.logo;
+    const navigation = makeNavigation(navigationProps, logo, style);
 
     return <React.Fragment>{navigation}</React.Fragment>;
   }
 }
 
-function makeNavigation(navigation) {
+function makeNavigation(navigation, logo, style) {
   return (
-    <Navbar bg="light" expand="lg">
-      <Navbar.Collapse>
-        <Nav className="mr-auto">{makeNavItems(navigation)}</Nav>
-        <React.Fragment>{makeForm()}</React.Fragment>
-      </Navbar.Collapse>
-    </Navbar>
+    <React.Fragment>
+      <a href="/">
+        <img src={logo} alt="Efactory Camisetas" />
+      </a>
+      <Navbar bg="" expand="md" style={style.bar}>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse>
+          <Nav className="mr-auto">{makeNavItems(navigation, style.items)}</Nav>
+          <React.Fragment>{makeForm()}</React.Fragment>
+        </Navbar.Collapse>
+      </Navbar>
+    </React.Fragment>
   );
 }
 
-function makeNavItemsWithIteration(listOfNavItems) {
+function makeNavItems(listOfNavItems, itemStyles) {
   let navItem = listOfNavItems.map((listItem) =>
     listItem.sublinks.length > 0 ? (
       <NavDropdown // if sublinks
         className={isFirstLevel(listItem.group) ? "dropdown" : "dropright"}
         title={listItem.name}
         key={listItem.name}
+        style={itemStyles}
       >
-        {makeNavItemsWithIteration(listItem.sublinks)}
+        {makeNavItems(listItem.sublinks)}
       </NavDropdown>
     ) : (
       // if no sublinks
-      <Nav.Link className="nav-item" href={listItem.link} key={listItem.name}>
+      <Nav.Link
+        className="nav-item"
+        href={listItem.link}
+        key={listItem.name}
+        style={itemStyles}
+      >
         {listItem.name}
       </Nav.Link>
     )
   );
   return navItem;
-}
-
-function makeNavItems(listOfNavItems) {
-  return makeNavItemsWithIteration(listOfNavItems, 0);
 }
 
 function makeForm() {

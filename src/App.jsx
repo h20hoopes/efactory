@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import HomePage from "./pages/HomePage";
-import Blog from "./pages/Blog";
+import Page from "./components/Page";
 import settings from "./settings.json";
 import Navigation from "./components/Navigation";
 
@@ -8,30 +7,35 @@ import {
   BrowserRouter as Router,
   Route,
   Switch,
-  Link,
   Redirect,
-  HashRouter,
 } from "react-router-dom";
 
 class App extends Component {
   state = { settings };
+
   render() {
+    const pages = makePages(this.state.settings.pages);
     return (
       <React.Fragment>
         <Navigation settings={this.state.settings} />
         <Router>
           <Switch>
-            <Route path="/blog">
-              <Blog settings={this.state.settings} />
-            </Route>
-            <Route path="/">
-              <HomePage settings={this.state.settings} />
-            </Route>
+            <Redirect from="/efactory" to="/"></Redirect>
+            {pages}
           </Switch>
         </Router>
       </React.Fragment>
     );
   }
+}
+
+function makePages(allPages) {
+  let pages = allPages.map((page) => (
+    <Route exact path={page.link} key={page.id}>
+      <Page data={page}></Page>
+    </Route>
+  ));
+  return pages;
 }
 
 export default App;

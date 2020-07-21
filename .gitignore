@@ -9,7 +9,7 @@
 /coverage
 
 # production
-/build
+# /build  # I want to see if I can just include the build folder and host off of it.
 
 # misc
 .DS_Store

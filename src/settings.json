@@ -1,90 +1,288 @@
 {
   "pages": [
     {
+      "id": 0,
       "name": "Home",
       "link": "/",
       "group": "top-navigation",
-      "inNavigation": true,
-      "components": [{ "name": "Hero", "style": {} }, { "name": "Comment" }]
-    }
-  ],
-  "navigationItems": [
-    { "name": "Home", "link": "/", "group": "top-navigation", "sublinks": [] },
-    {
-      "name": "Blog",
-      "link": "/blog",
-      "group": "top-navigation",
-      "sublinks": []
-    },
-    {
-      "name": "Experimental",
-      "link": "/experimental",
-      "group": "top-navigation",
-      "sublinks": []
-    },
-    {
-      "name": "Personal",
-      "link": null,
-      "group": "top-navigation",
-      "sublinks": [
-        { "name": "Music", "link": "/music", "sublinks": [] },
+      "components": [
         {
-          "name": "Mana Beadwork",
-          "link": "/mana-beadwork",
-          "sublinks": [
-            {
-              "name": "Bananas",
-              "link": "/bananas",
-              "sublinks": [
-                { "name": "Apples", "link": "/apples", "sublinks": [] }
-              ]
-            },
-            { "name": "Oranges", "link": "/oranges", "sublinks": [] }
+          "id": "0-0",
+          "name": "banner",
+          "style": {
+            "css": { "fontSize": 48 },
+            "classes": ".text-primary"
+          },
+          "data": [
+            { "id": "0-0-0", "type": "h1", "data": "Efactory camisetas" }
           ]
-        },
-        { "name": "Music Videos", "link": "/music-videos", "sublinks": [] },
-        {
-          "name": "Future Projects",
-          "link": "/future-projects",
-          "sublinks": []
         }
       ]
     },
     {
-      "name": "Professional",
-      "link": null,
+      "id": 1,
+      "name": "Blog",
+      "link": "/blog",
       "group": "top-navigation",
-      "sublinks": [
-        { "name": "Research", "link": "/research", "sublinks": [] },
-        { "name": "Data Analytics", "link": "/data-analytics", "sublinks": [] },
-        { "name": "Web Design", "link": "/web-design", "sublinks": [] },
-        { "name": "QA Engineer", "link": "/qa-engineer", "sublinks": [] },
+      "components": [
         {
-          "name": "Relevant Classes",
-          "link": "/relevant-classes",
-          "sublinks": []
+          "id": "1-0",
+          "name": "banner",
+          "style": { "color": "red" },
+          "data": [{ "id": "1-0-0", "type": "h2", "data": "This is blog" }]
         },
-        { "name": "Service", "link": "/service", "sublinks": [] },
-        {
-          "name": "IT Security",
-          "link": "/it-security",
-          "sublinks": [
-            { "name": "Some random thing", "link": "/random", "sublinks": [] }
-          ]
-        },
-        { "name": "Database", "link": "/database", "sublinks": [] }
+        { "name": "Comment" }
       ]
     },
     {
+      "id": 2,
+      "name": "Experimental",
+      "link": "/experimental",
+      "group": "top-navigation",
+      "components": [{ "name": "Hero", "style": {} }, { "name": "Comment" }]
+    },
+    {
+      "id": 5,
       "name": "Contact",
       "link": "/contact",
       "group": "top-navigation",
-      "sublinks": []
+      "components": [{ "name": "Hero", "style": {} }, { "name": "Comment" }]
+    },
+    {
+      "id": 6,
+      "name": "Research",
+      "link": "/research",
+      "group": "professional-experienceß",
+      "components": [{ "name": "Hero", "style": {} }, { "name": "Comment" }]
+    },
+    {
+      "id": 7,
+      "name": "Data Analytics",
+      "link": "/data-analytics",
+      "group": "professional-experienceß",
+      "components": [{ "name": "Hero", "style": {} }, { "name": "Comment" }]
+    },
+    {
+      "id": 8,
+      "name": "Web Design",
+      "link": "/web-design",
+      "group": "professional-experienceß",
+      "components": [{ "name": "Hero", "style": {} }, { "name": "Comment" }]
+    },
+    {
+      "id": 9,
+      "name": "QA Engineer",
+      "link": "/qa-engineer",
+      "group": "professional-experienceß",
+      "components": [{ "name": "Hero", "style": {} }, { "name": "Comment" }]
+    },
+    {
+      "id": 10,
+      "name": "Relevant Classes",
+      "link": "/relevant-classes",
+      "group": "professional-experienceß",
+      "components": [{ "name": "Hero", "style": {} }, { "name": "Comment" }]
+    },
+    {
+      "id": 11,
+      "name": "Service",
+      "link": "/service",
+      "group": "professional-experienceß",
+      "components": [{ "name": "Hero", "style": {} }, { "name": "Comment" }]
+    },
+    {
+      "id": 12,
+      "name": "IT Security",
+      "link": "/it-security",
+      "group": "professional-experienceß",
+      "components": [{ "name": "Hero", "style": {} }, { "name": "Comment" }]
+    },
+    {
+      "id": 13,
+      "name": "Database",
+      "link": "/database",
+      "group": "professional-experienceß",
+      "components": [{ "name": "Hero", "style": {} }, { "name": "Comment" }]
+    },
+    {
+      "id": 14,
+      "name": "Some random thing",
+      "link": "/random",
+      "group": "database-test",
+      "components": [{ "name": "Hero", "style": {} }, { "name": "Comment" }]
+    },
+    {
+      "id": 15,
+      "name": "Music",
+      "link": "/music",
+      "group": "personal",
+      "components": [{ "name": "Hero", "style": {} }, { "name": "Comment" }]
+    },
+    {
+      "id": 16,
+      "name": "Mana Beadwork",
+      "link": "/mana-beadwork",
+      "group": "personal",
+      "components": [{ "name": "Hero", "style": {} }, { "name": "Comment" }]
+    },
+    {
+      "id": 17,
+      "name": "Music Videos",
+      "link": "/music-videos",
+      "group": "personal",
+      "components": [{ "name": "Hero", "style": {} }, { "name": "Comment" }]
+    },
+    {
+      "id": 18,
+      "name": "Future Projects",
+      "link": "/future-projects",
+      "group": "personal",
+      "components": [{ "name": "Hero", "style": {} }, { "name": "Comment" }]
+    },
+    {
+      "id": 19,
+      "name": "Random",
+      "link": "/random",
+      "group": "future-projects",
+      "components": [{ "name": "Hero", "style": {} }, { "name": "Comment" }]
+    },
+    {
+      "id": 20,
+      "name": "Another thing",
+      "link": "/another-thing",
+      "group": "random",
+      "components": [
+        {
+          "id": "0-1",
+          "name": "slider",
+          "style": {
+            "css": {},
+            "classes": ""
+          },
+          "images": [
+            {
+              "id": "0-1-0",
+              "src": "/src/content/images/20171107_124306.jpg",
+              "alt": "alt text",
+              "class": "d-block w-100",
+              "css": {
+                "maxWidth": "100%",
+                "margin": "auto",
+                "overflowX": "auto"
+              }
+            },
+            {
+              "id": "0-1-0",
+              "src": "/src/content/images/20171107_124306.jpg",
+              "alt": "alt text",
+              "class": "d-block w-100",
+              "css": {
+                "maxWidth": "100%",
+                "margin": "auto",
+                "overflowX": "auto"
+              }
+            }
+          ],
+          "data": [{}]
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Hidden",
+      "link": "/hidden",
+      "group": "random",
+      "components": [{ "name": "Hero", "style": {} }, { "name": "Comment" }]
     }
   ],
-  "testData": [
-    { "value": "This is the value of this thing" },
-    { "value": "This is another thing" },
-    { "value": "This is another thing the third thing" }
-  ]
+  "navigation": {
+    "style": {
+      "bar": { "backgroundColor": "#eeeee6" },
+      "items": { "color": "#000006" }
+    },
+    "logo": "logo.png",
+    "navigationItems": [
+      {
+        "name": "Home",
+        "link": "/",
+        "group": "top-navigation",
+        "sublinks": []
+      },
+      {
+        "name": "Blog",
+        "link": "/blog",
+        "group": "top-navigation",
+        "sublinks": []
+      },
+      {
+        "name": "Experimental",
+        "link": "/experimental",
+        "group": "top-navigation",
+        "sublinks": []
+      },
+      {
+        "name": "Personal",
+        "link": null,
+        "group": "top-navigation",
+        "sublinks": [
+          { "name": "Music", "link": "/music", "sublinks": [] },
+          {
+            "name": "Mana Beadwork",
+            "link": "/mana-beadwork",
+            "sublinks": [
+              {
+                "name": "Bananas",
+                "link": "/bananas",
+                "sublinks": [
+                  { "name": "Apples", "link": "/apples", "sublinks": [] }
+                ]
+              },
+              { "name": "Oranges", "link": "/oranges", "sublinks": [] }
+            ]
+          },
+          { "name": "Music Videos", "link": "/music-videos", "sublinks": [] },
+          {
+            "name": "Future Projects",
+            "link": "/future-projects",
+            "sublinks": []
+          }
+        ]
+      },
+      {
+        "name": "Professional",
+        "link": null,
+        "group": "top-navigation",
+        "sublinks": [
+          { "name": "Research", "link": "/research", "sublinks": [] },
+          {
+            "name": "Data Analytics",
+            "link": "/data-analytics",
+            "sublinks": []
+          },
+          { "name": "Web Design", "link": "/web-design", "sublinks": [] },
+          { "name": "QA Engineer", "link": "/qa-engineer", "sublinks": [] },
+          {
+            "name": "Relevant Classes",
+            "link": "/relevant-classes",
+            "sublinks": []
+          },
+          { "name": "Service", "link": "/service", "sublinks": [] },
+          {
+            "name": "IT Security",
+            "link": "/it-security",
+            "sublinks": [
+              { "name": "Some random thing", "link": "/random", "sublinks": [] }
+            ]
+          },
+          { "name": "Database", "link": "/database", "sublinks": [] }
+        ]
+      },
+      {
+        "name": "Contact",
+        "link": "/contact",
+        "group": "top-navigation",
+        "sublinks": []
+      }
+    ]
+  }
 }
